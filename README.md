@@ -69,9 +69,12 @@ Open `http://localhost:3000/` in your browser.
 
 TBA
 
-## Authors
+## Author
 
-TBA
+👤 **Kaboha Jean Mark**
+
+- GitHub: [@githubhandle](https://github.com/KabohaJeanMark)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jean-mark-kaboha-software-engineer/)
 
 ## 🤝 Contributing
 
