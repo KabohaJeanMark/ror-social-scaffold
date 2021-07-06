@@ -63,7 +63,7 @@ Open `http://localhost:3000/` in your browser.
 
 ### ERD documentation
 
-![screenshot](docs/ERD.png)
+![screenshot](docs/erd.png)
 
 ## Author
 
