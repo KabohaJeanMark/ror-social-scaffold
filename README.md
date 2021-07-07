@@ -1,16 +1,12 @@
 # Scaffold for social media app with Ruby on Rails
 
 > This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+Milestone 1 has been worked on adding the data architecture documentation with the Entity Relationship Diagram.
 
 ## Built With
 
 - Ruby v2.7.0
 - Ruby on Rails v5.2.4
-
-## Live Demo
-
-TBA
-
 
 ## Getting Started
 
@@ -65,19 +61,22 @@ Open `http://localhost:3000/` in your browser.
 
 > Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
 
-### Deployment
+### ERD documentation
 
-TBA
+![screenshot](docs/erd.png)
 
-## Authors
+## Author
 
-TBA
+👤 **Kaboha Jean Mark**
+
+- GitHub: [@githubhandle](https://github.com/KabohaJeanMark)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jean-mark-kaboha-software-engineer/)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/KabohaJeanMark/ror-social-scaffold/issues/).
 
 ## Show your support
 
@@ -85,9 +84,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
+Hat tip to Microverse for the README template, initial repo, instructions and tutoring for this Capstone project.
 
 ## 📝 License
 
-TBA
+This project is [MIT](./LICENSE) licensed.
 
