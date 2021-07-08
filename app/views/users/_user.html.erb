@@ -3,4 +3,7 @@
   <span class="profile-link">
     <%= link_to 'See Profile',  user_path(user), class: 'profile-link' %>
   </span>
+  <span>
+    <%= link_to 'Add Friend', friendships_path(friendship: {friend_id:user.id, confirmed:false}), method: :post %>
+  </span>
 </li>
