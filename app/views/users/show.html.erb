@@ -1,8 +1,10 @@
 <section class="user-section">
   <h2><%= "Name: #{@user.name}" %></h2>
-  <span>
-    <%= link_to 'Add Friend', friendships_path(friendship: {user_id:current_user.id, friend_id:@user.id, confirmed:false}), method: :post, class: 'btn btn-primary' %>
-  </span>
+  <% if !current_user.friend?(@user) %>
+    <span>
+      <%= link_to 'Add Friend', friendships_path(friendship: {user_id:current_user.id, friend_id:@user.id, confirmed:false}), method: :post, class: 'btn btn-primary' %>
+    </span>
+  <% end %>
   <article class="timeline">
     <h3>Recent posts:</h3>
     <ul class="posts">
