@@ -21,9 +21,18 @@ class FriendshipsController < ApplicationController
     @friendship = Friendship.find_by(id: params[:id])
     @friendship.update_attribute(:confirmed, true)
     if @friendship.save
-      redirect_to current_user, notice: 'Accepted friend request'
+      redirect_to posts_path, notice: 'Accepted friend request'
     else
       render :new, notice: 'Accept failed'
+    end
+  end
+
+  def destroy
+    @friendship = Friendship.find_by(id: params[:id])
+    if @friendship.destroy
+      redirect_to posts_path, notice: 'Deleted friend request'
+    else
+      render :new, notice: 'Delete failed'
     end
   end
 

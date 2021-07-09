@@ -6,7 +6,6 @@ Rails.application.routes.draw do
 
   resources :friendships
 
-  get 'requests', to: 'users#requests'
   get 'my_requests', to: 'users#my_requests'
 
   resources :users, only: [:index, :show]

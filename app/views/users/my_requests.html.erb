@@ -4,7 +4,9 @@
     <li>
       <% inviter = User.find(request.user_id)%>
       <%= inviter.name%> 
-      <span><%= link_to 'Accept', friendship_path(id: request.user_id), method: 'PATCH'%></span>
+      <%= link_to 'Accept', friendship_path(id: request.user_id), method: 'PATCH', class: 'btn btn-primary'%>
+      <%= link_to 'Decline', friendship_path(id: request.user_id), method: 'DELETE', class: 'btn btn-danger'%>
     </li>
+    <br/>
   <% end %>
 </ul>
