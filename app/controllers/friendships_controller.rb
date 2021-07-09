@@ -17,6 +17,16 @@ class FriendshipsController < ApplicationController
     end
   end
 
+  def update
+    @friendship = Friendship.find_by(id: params[:id])
+    @friendship.update_attribute(:confirmed, true)
+    if @friendship.save
+      redirect_to current_user, notice: 'Accepted friend request'
+    else
+      render :new, notice: 'Accept failed'
+    end
+  end
+
   private
 
   def friendship_params
