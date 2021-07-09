@@ -1,0 +1,8 @@
+<h1>My Incoming Friend Requests</h1>
+<ul>
+  <% @friend_requests.each do |request| %>
+    <li>
+      <%= request.name %>
+    </li>
+  <% end %>
+</ul>

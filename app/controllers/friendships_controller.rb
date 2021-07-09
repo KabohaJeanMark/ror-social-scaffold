@@ -1,4 +1,8 @@
 class FriendshipsController < ApplicationController
+  def index
+    @frienships = Friendships.all
+  end
+
   def new
     @friendship = Friendship.new
   end
