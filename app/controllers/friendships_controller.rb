@@ -13,7 +13,7 @@ class FriendshipsController < ApplicationController
     if @friendship.save
       redirect_to current_user, notice: 'Friend request sent'
     else
-      render :new, notice: 'Request not sent'
+      redirect_to current_user, notice: 'Request not sent'
     end
   end
 
