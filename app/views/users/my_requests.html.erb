@@ -2,7 +2,7 @@
 <ul>
   <% @friend_requests.each do |request| %>
     <li>
-      <% if request.confirmed == false%>
+      <% if request.confirmed == nil%>
       <% inviter = User.find(request.user_id)%>
         <%= inviter.name%> 
         <%= link_to 'Accept', friendship_path(id: request.id), method: 'PATCH', class: 'btn btn-primary'%>

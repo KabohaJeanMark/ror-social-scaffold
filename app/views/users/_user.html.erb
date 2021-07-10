@@ -6,7 +6,7 @@
     </span>
     <% if !request_already_sent?(user)%>
       <span>
-        <%= link_to 'Add Friend', friendships_path(friendship: {user_id:current_user.id, friend_id:user.id, confirmed:false}), method: :post, class: 'btn btn-primary' %>
+        <%= link_to 'Add Friend', friendships_path(friendship: {user_id:current_user.id, friend_id:user.id, confirmed:nil}), method: :post, class: 'btn btn-primary' %>
       </span>
     <% end %>
   </li>

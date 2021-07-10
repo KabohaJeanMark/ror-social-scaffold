@@ -11,9 +11,9 @@ class FriendshipsController < ApplicationController
     @friendship = Friendship.new(friendship_params)
 
     if @friendship.save
-      redirect_to current_user, notice: 'Friend request sent'
+      redirect_to posts_path, notice: 'Friend request sent'
     else
-      redirect_to current_user, notice: 'Request not sent'
+      redirect_to posts_path, notice: 'Request not sent'
     end
   end
 
@@ -23,7 +23,7 @@ class FriendshipsController < ApplicationController
     if @friendship.save
       redirect_to posts_path, notice: 'Accepted friend request'
     else
-      render :new, notice: 'Request not sent'
+      redirect_to posts_path, notice: 'Request not sent'
     end
   end
 

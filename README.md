@@ -65,6 +65,27 @@ Open `http://localhost:3000/` in your browser.
 
 ![screenshot](docs/erd.png)
 
+### Project Runthrough
+#### Sign Up
+- A user firsts signs up following the guidance in the sign up form with a password of atleast 6 digits
+
+![screenshot](app/assets/images/sign_up.png)
+
+#### Post Creation on Timeline
+- You are then directed to a timeline page that shows all posts and gives you the provision to create a new post.
+
+![screenshot](app/assets/images/timeline.png)
+
+#### All Users, user profile and Add Friend button
+- Click on the all Users page to see all the users. After clicking add friend, you cant click add friend again because the request has already been sent. The button disappears.
+
+![screenshot](app/assets/images/all_users.png)
+
+#### Pending Friend Requests, Accept or Decline
+- Click on My Friend Requests to view all your incoming friend requests and either accept or decline them. After this, they are removed from that pending list.
+
+![screenshot](app/assets/images/friend_requests.png)
+
 ## Author
 
 👤 **Kaboha Jean Mark**
