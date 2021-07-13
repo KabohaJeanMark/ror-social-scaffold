@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Comment, type: :model do
   context 'validation test' do
     it 'is valid with content' do
-      comment = Comment.new(content: "The rain in Spain")
+      comment = Comment.new(content: 'The rain in Spain')
       expect(comment).to_not be_valid
     end
 
