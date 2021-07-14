@@ -56,7 +56,7 @@ Open `http://localhost:3000/` in your browser.
 ### Run tests
 
 ```
-    rpsec --format documentation
+    rspec --format documentation
 ```
 
 > Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
@@ -64,6 +64,27 @@ Open `http://localhost:3000/` in your browser.
 ### ERD documentation
 
 ![screenshot](docs/erd.png)
+
+### Project Runthrough
+#### Sign Up
+- A user firsts signs up following the guidance in the sign up form with a password of atleast 6 digits
+
+![screenshot](app/assets/images/sign_up.png)
+
+#### Post Creation on Timeline
+- You are then directed to a timeline page that shows all posts and gives you the provision to create a new post.
+
+![screenshot](app/assets/images/timeline.png)
+
+#### All Users, user profile and Add Friend button
+- Click on the all Users page to see all the users. After clicking add friend, you cant click add friend again because the request has already been sent. The button disappears.
+
+![screenshot](app/assets/images/all_users.png)
+
+#### Pending Friend Requests, Accept or Decline
+- Click on My Friend Requests to view all your incoming friend requests and either accept or decline them. After this, they are removed from that pending list.
+
+![screenshot](app/assets/images/friend_requests.png)
 
 ## Author
 

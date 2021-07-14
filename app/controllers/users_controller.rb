@@ -9,4 +9,8 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @posts = @user.posts.ordered_by_most_recent
   end
+
+  def my_requests
+    @friend_requests = current_user.inverse_friendships
+  end
 end

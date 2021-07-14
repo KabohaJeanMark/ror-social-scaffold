@@ -1,0 +1,14 @@
+<h1>My Incoming Friend Requests</h1>
+<ul>
+  <% @friend_requests.each do |request| %>
+    <li>
+      <% if request.confirmed == nil%>
+      <% inviter = User.find(request.user_id)%>
+        <%= inviter.name%> 
+        <%= link_to 'Accept', friendship_path(id: request.id), method: 'PATCH', class: 'btn btn-primary'%>
+        <%= link_to 'Decline', friendship_path(id: request.id), method: 'DELETE', class: 'btn btn-danger'%>
+      <% end %>
+    </li>
+    <br/>
+  <% end %>
+</ul>
