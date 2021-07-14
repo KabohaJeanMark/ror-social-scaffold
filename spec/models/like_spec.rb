@@ -8,7 +8,7 @@ RSpec.describe Like, type: :model do
     expect(Like.new).to_not be_valid
   end
 
-  it 'is valid with proper attributes' do
+  it 'is valid with proper attributes for user and post' do
     expect(Like.new(user_id: user1.id, post_id: post1.id ))
   end
 end

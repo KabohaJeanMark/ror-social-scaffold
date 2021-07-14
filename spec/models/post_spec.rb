@@ -14,7 +14,7 @@ RSpec.describe Post, type: :model do
       expect(post).to_not be_valid
     end
 
-    it 'is valid with proper content filled in' do
+    it 'is valid with proper post content filled in' do
       expect(post1).to be_valid
     end
 
