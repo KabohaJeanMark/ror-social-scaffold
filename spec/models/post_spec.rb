@@ -22,4 +22,14 @@ RSpec.describe Post, type: :model do
       expect(post2).to_not be_valid
     end
   end
+  context 'association test' do
+    it 'has many likes' do
+      p = Post.reflect_on_association(:likes)
+      expect(p.macro).to eq(:has_many)
+    end
+    it 'has many comments' do
+      p = Post.reflect_on_association(:comments)
+      expect(p.macro).to eq(:has_many)
+    end
+  end
 end
