@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  let(:user1) {User.create(name: 'jean', email: 'jean@gmail.com', password: '123456')}
-  let(:post1) {Post.create(content: 'First post', user_id: user1.id)}
-  let(:post2) {Post.create(content: '', user_id: user1.id)}
+  let(:user1) { User.create(name: 'jean', email: 'jean@gmail.com', password: '123456') }
+  let(:post1) { Post.create(content: 'First post', user_id: user1.id) }
+  let(:post2) { Post.create(content: '', user_id: user1.id) }
   context 'validation test' do
     it 'is valid with valid attributes' do
       expect(Post.new).to_not be_valid

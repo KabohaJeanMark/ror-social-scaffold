@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Friendship, type: :model do
-  let(:user1) {User.create(name: 'jean', email: 'jean@gmail.com', password: '123456')}
-  let(:user2) {User.create(name: 'mark', email: 'mark@gmail.com', password: '123456')}
+  let(:user1) { User.create(name: 'jean', email: 'jean@gmail.com', password: '123456') }
+  let(:user2) { User.create(name: 'mark', email: 'mark@gmail.com', password: '123456') }
 
   context 'validation test' do
     it 'is not valid without valid params passed' do

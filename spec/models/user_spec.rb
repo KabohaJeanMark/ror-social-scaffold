@@ -34,4 +34,15 @@ RSpec.describe User, type: :model do
       expect(u.macro).to eq(:has_many)
     end
   end
+
+  context 'instant_methods' do
+    describe '#friend?' do
+      it 'checks if a user is a friend of another user' do
+        user1 = User.create(name: 'jean', email: 'jean@gmail.com', password: '123456')
+        user2 = User.create(name: 'mark', email: 'mark@gmail.com', password: '123456')
+        Friendship.create(user_id: user1.id, friend_id: user2.id, confirmed: true)
+        expect(user1.friend?(user2)).to be true
+      end
+    end
+  end
 end
