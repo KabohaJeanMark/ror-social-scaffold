@@ -13,4 +13,8 @@ class UsersController < ApplicationController
   def my_requests
     @friend_requests = current_user.inverse_friendships
   end
+
+  def my_friends
+    @user_friends = current_user.friends
+  end
 end

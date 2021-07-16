@@ -1,0 +1,15 @@
+<table>
+  <th>Friends</th>
+  <tr>
+    <td>Name</td>
+    <td>Email</td>
+    <td>Profile</td>
+  </tr>
+  <tr>
+  <%@user_friends.uniq.each do |friend|%>
+  <td><%= friend.name %></td>
+  <td><%= friend.email %></td>
+  <td><%= link_to 'See Profile',  user_path(friend), class: 'profile-link' %></td>
+  </tr>
+  <% end %>
+</table>
