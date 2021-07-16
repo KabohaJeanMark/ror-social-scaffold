@@ -83,8 +83,14 @@ Open `http://localhost:3000/` in your browser.
 
 #### Pending Friend Requests, Accept or Decline
 - Click on My Friend Requests to view all your incoming friend requests and either accept or decline them. After this, they are removed from that pending list.
+- When you accept a friend request, it redirects to the Friends page that has a table showing all friends. 
 
 ![screenshot](app/assets/images/friend_requests.png)
+
+#### My Friends page to view all my accepted friends
+- Click on Friends on the navbar to view all your friends in a tabular format with their emails and links to their profiles.
+
+![screenshot](app/assets/images/my_friends.png)
 
 ## Author
 
