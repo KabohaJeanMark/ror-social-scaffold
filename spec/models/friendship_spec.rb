@@ -21,6 +21,6 @@ RSpec.describe Friendship, type: :model do
         friendship.confirmation
         expect(user1.friend?(user2)).to be true
       end
-    end 
+    end
   end
 end
