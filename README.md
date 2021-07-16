@@ -1,7 +1,10 @@
-# Scaffold for social media app with Ruby on Rails
+# Stay in Touch Social Media app with Ruby on Rails. 
 
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
-Milestone 1 has been worked on adding the data architecture documentation with the Entity Relationship Diagram.
+> A full stack rails application of a friends social media website where users can send and receive friend requests and share posts with each other. It uses associations and through associations to create friendships and mutual friendships. The features are listed next to the screenshots.
+
+## Live Demo
+
+[Live Demo Link](https://sheltered-hamlet-43209.herokuapp.com/)
 
 ## Built With
 
@@ -14,9 +17,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Ruby: 2.6.3
-Rails: 5.2.3
-Postgres: >=9.5
+- Ruby: 2.6.3
+- Rails: 5.2.3
+- Postgres: >=9.5
 
 ### Setup
 
@@ -67,28 +70,41 @@ Open `http://localhost:3000/` in your browser.
 
 ### Project Runthrough
 #### Sign Up
-- A user firsts signs up following the guidance in the sign up form with a password of atleast 6 digits
+As a guest user:
+
+- Once can create account/log in.
+- One can see only “Sign in” and “Sign out” page.
 
 ![screenshot](app/assets/images/sign_up.png)
 
 #### Post Creation on Timeline
 - You are then directed to a timeline page that shows all posts and gives you the provision to create a new post.
+- One can create new posts (text only).
+- One can like/dislike posts (but I can like single post only once).
+- One can add comments to posts.
+- One can see “Timeline” page with posts (with number of likes and comments) written by me and all my friends (the most recent posts on the top).
+- Timeline page is the root page of the app.
 
 ![screenshot](app/assets/images/timeline.png)
 
 #### All Users, user profile and Add Friend button
-- Click on the all Users page to see all the users. After clicking add friend, you cant click add friend again because the request has already been sent. The button disappears.
+- One can see all users list.
+- One can see selected user page with their user name and all posts written by them (the most recent posts on the top).
+- One can send a friendship invitation.
 
 ![screenshot](app/assets/images/all_users.png)
 
 #### Pending Friend Requests, Accept or Decline
-- Click on My Friend Requests to view all your incoming friend requests and either accept or decline them. After this, they are removed from that pending list.
+- One can click on My Friend Requests to view all your incoming friend requests and either accept or decline them. 
 - When you accept a friend request, it redirects to the Friends page that has a table showing all friends. 
+- One can see pending friendship invitations sent to me from other users.
+- One can accept or reject friendships invitation.
+
 
 ![screenshot](app/assets/images/friend_requests.png)
 
 #### My Friends page to view all my accepted friends
-- Click on Friends on the navbar to view all your friends in a tabular format with their emails and links to their profiles.
+- Once can click on Friends on the navbar to view all your friends in a tabular format with their emails and links to their profiles.
 
 ![screenshot](app/assets/images/my_friends.png)
 
