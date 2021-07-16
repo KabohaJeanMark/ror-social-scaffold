@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :friendships
 
   get 'my_requests', to: 'users#my_requests'
+  get 'my_friends', to: 'users#my_friends'
 
   resources :users, only: [:index, :show]
   resources :posts, only: [:index, :create] do

@@ -19,9 +19,9 @@ class FriendshipsController < ApplicationController
 
   def update
     @friendship = Friendship.find_by(id: params[:id])
-    @friendship.confirmed = true
-    if @friendship.save
-      redirect_to posts_path, notice: 'Accepted friend request'
+    @friendship.confirmation
+    if @friendship.confirmation
+      redirect_to my_friends_path, notice: 'Accepted friend request'
     else
       redirect_to posts_path, notice: 'Request not sent'
     end
