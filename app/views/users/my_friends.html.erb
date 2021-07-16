@@ -1,15 +1,20 @@
-<table>
-  <th>Friends</th>
+<div class="jumbotron">
+<table class="table table-striped">
+  <thead class="thead-dark">
   <tr>
-    <td>Name</td>
-    <td>Email</td>
-    <td>Profile</td>
+    <th scope="col">Name</th>
+    <th scope="col">Email</th>
+    <th scope="col">Profile</th>
   </tr>
+  </thead>
+  <tbody>
   <tr>
   <%@user_friends.uniq.each do |friend|%>
   <td><%= friend.name %></td>
   <td><%= friend.email %></td>
-  <td><%= link_to 'See Profile',  user_path(friend), class: 'profile-link' %></td>
+  <td><%= link_to 'See Profile',  user_path(friend), class: 'table-link' %></td>
   </tr>
   <% end %>
+  </tbody>
 </table>
+</div>

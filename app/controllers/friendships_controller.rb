@@ -21,7 +21,7 @@ class FriendshipsController < ApplicationController
     @friendship = Friendship.find_by(id: params[:id])
     @friendship.confirmation
     if @friendship.confirmation
-      redirect_to posts_path, notice: 'Accepted friend request'
+      redirect_to my_friends_path, notice: 'Accepted friend request'
     else
       redirect_to posts_path, notice: 'Request not sent'
     end
