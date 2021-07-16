@@ -1,6 +1,6 @@
 module UserHelper
   def request_already_sent?(user)
-    !current_user.sent_friendship_requests.where(friend_id: user.id).empty?
+    current_user.pending_friends.include?(user)
   end
 
   def already_friend?(user)

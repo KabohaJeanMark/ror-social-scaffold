@@ -18,6 +18,7 @@ class User < ApplicationRecord
   has_many :friends, through: :accepted_friendships
 
   has_many :sent_friendship_requests, -> { where confirmed: nil }, class_name: 'Friendship', foreign_key: 'user_id'
+  has_many :pending_friends, through: :sent_friendship_requests, source: :friend
 
   def friend?(user)
     friends.include?(user)
