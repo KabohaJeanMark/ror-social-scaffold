@@ -1,16 +1,12 @@
 # Scaffold for social media app with Ruby on Rails
 
 > This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+Milestone 1 has been worked on adding the data architecture documentation with the Entity Relationship Diagram.
 
 ## Built With
 
 - Ruby v2.7.0
 - Ruby on Rails v5.2.4
-
-## Live Demo
-
-TBA
-
 
 ## Getting Started
 
@@ -60,24 +56,54 @@ Open `http://localhost:3000/` in your browser.
 ### Run tests
 
 ```
-    rpsec --format documentation
+    rspec --format documentation
 ```
 
 > Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
 
-### Deployment
+### ERD documentation
 
-TBA
+![screenshot](docs/erd.png)
 
-## Authors
+### Project Runthrough
+#### Sign Up
+- A user firsts signs up following the guidance in the sign up form with a password of atleast 6 digits
 
-TBA
+![screenshot](app/assets/images/sign_up.png)
+
+#### Post Creation on Timeline
+- You are then directed to a timeline page that shows all posts and gives you the provision to create a new post.
+
+![screenshot](app/assets/images/timeline.png)
+
+#### All Users, user profile and Add Friend button
+- Click on the all Users page to see all the users. After clicking add friend, you cant click add friend again because the request has already been sent. The button disappears.
+
+![screenshot](app/assets/images/all_users.png)
+
+#### Pending Friend Requests, Accept or Decline
+- Click on My Friend Requests to view all your incoming friend requests and either accept or decline them. After this, they are removed from that pending list.
+- When you accept a friend request, it redirects to the Friends page that has a table showing all friends. 
+
+![screenshot](app/assets/images/friend_requests.png)
+
+#### My Friends page to view all my accepted friends
+- Click on Friends on the navbar to view all your friends in a tabular format with their emails and links to their profiles.
+
+![screenshot](app/assets/images/my_friends.png)
+
+## Author
+
+👤 **Kaboha Jean Mark**
+
+- GitHub: [@githubhandle](https://github.com/KabohaJeanMark)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jean-mark-kaboha-software-engineer/)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/KabohaJeanMark/ror-social-scaffold/issues/).
 
 ## Show your support
 
@@ -85,9 +111,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
+Hat tip to Microverse for the README template, initial repo, instructions and tutoring for this Capstone project.
 
 ## 📝 License
 
-TBA
+This project is [MIT](./LICENSE) licensed.
 
