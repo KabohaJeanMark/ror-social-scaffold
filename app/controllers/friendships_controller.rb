@@ -19,11 +19,8 @@ class FriendshipsController < ApplicationController
 
   def update
     @friendship = Friendship.find_by(id: params[:id])
-    inviter = params[:requester]
-    @friendship.confirmed = true
-    if @friendship.save
-      @mutual_friendship = Friendship.new(user_id: inviter.to_i, friend_id: current_user.id, confirmed: true)
-      @mutual_friendship.save
+    @friendship.confirmation
+    if @friendship.confirmation
       redirect_to posts_path, notice: 'Accepted friend request'
     else
       redirect_to posts_path, notice: 'Request not sent'
