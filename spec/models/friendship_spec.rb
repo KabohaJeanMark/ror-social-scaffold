@@ -13,4 +13,14 @@ RSpec.describe Friendship, type: :model do
       expect(Friendship.new(user_id: user1.id, friend_id: user2.id)).to be_valid
     end
   end
+
+  context 'instance methods' do
+    describe '#confirmation' do
+      it 'checks if the friend confirmation works' do
+        friendship = Friendship.new(user_id: user1.id, friend_id: user2.id, confirmed: false)
+        friendship.confirmation
+        expect(user1.friend?(user2)).to be true
+      end
+    end 
+  end
 end
